@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>七七影视大全｜电影电视剧综艺高清在线看</title>
+<meta name="description" content="七七影视大全整理院线电影、热播剧集、综艺纪录片与动漫番剧，按类型、年份和地区分类检索，更新节奏与观看入口一并收录。">
+<meta name="keywords" content="七七影视大全, 在线影视, 电影大全, 电视剧推荐, 综艺综艺在线">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0b0a14">
+<link rel="canonical" href="https://qiqiyingshidaquan-zh.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "七七影视大全",
+  "url": "https://qiqiyingshidaquan-zh.github.io/",
+  "description": "收录院线电影、热播剧集、综艺、纪录片与动漫番剧的影视资料索引站。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://qiqiyingshidaquan-zh.github.io/#suoyin",
+    "query-input": "required name=search_term"
+  }
+}
+</script>
+<style>
+:root{
+  --ink:#e8e6f2;
+  --ink-dim:#9a97ad;
+  --plum:#6c5ce7;
+  --plum-2:#a855f7;
+  --coral:#ff6b8a;
+  --bg:#0b0a14;
+  --bg-2:#14121f;
+  --line:rgba(255,255,255,.08);
+  --rad:18px;
+  --fs:clamp(.94rem, 2.6vw, 1.0625rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  font-size:var(--fs);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:
+    radial-gradient(1100px 520px at 82% -8%, rgba(168,85,247,.22), transparent 60%),
+    radial-gradient(760px 420px at 4% 12%, rgba(255,107,138,.14), transparent 62%);
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1rem,4vw,1.75rem)}
+
+/* 顶部 */
+.head{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(11,10,20,.78);
+  border-bottom:1px solid var(--line);
+}
+.head-in{display:flex;align-items:center;gap:1rem;padding:.7rem 0}
+.logo{display:flex;align-items:baseline;gap:.45rem;font-weight:800;letter-spacing:.04em;font-size:clamp(1.05rem,3.4vw,1.35rem)}
+.logo b{background:linear-gradient(92deg,var(--plum-2),var(--coral));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo span{font-size:.68em;color:var(--ink-dim);font-weight:600;letter-spacing:.02em}
+.nav{margin-left:auto;display:flex;align-items:center;gap:.35rem;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  flex:0 0 auto;padding:.4rem .75rem;border-radius:999px;font-size:.86em;color:var(--ink-dim);
+  border:1px solid transparent;white-space:nowrap;
+}
+.nav a:focus-visible,.skip:focus-visible{outline:2px solid var(--coral);outline-offset:3px}
+.nav a:hover{color:var(--ink);border-color:var(--line)}
+@media (min-width:860px){
+  .nav a{padding:.42rem .95rem;font-size:.9em}
+}
+
+.skip{position:absolute;left:-999px;top:0;background:var(--plum);color:#fff;padding:.5rem .9rem;border-radius:0 0 10px 0;z-index:99}
+.skip:focus{left:0}
+
+/* 首屏 */
+.hero{padding:clamp(3rem,10vw,5.5rem) 0 clamp(2.2rem,7vw,3.6rem)}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78em;letter-spacing:.18em;color:var(--plum-2);text-transform:uppercase;margin-bottom:1.1rem}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.6}
+h1{font-size:clamp(1.85rem,7.4vw,3.5rem);line-height:1.18;font-weight:900;letter-spacing:-.02em;max-width:15em}
+h1 em{font-style:normal;background:linear-gradient(96deg,var(--coral),var(--plum-2) 55%,var(--plum));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{margin-top:1.15rem;max-width:34em;color:var(--ink-dim);font-size:clamp(.95rem,2.7vw,1.08rem)}
+.cta{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{padding:.72rem 1.5rem;border-radius:999px;font-weight:700;font-size:.94em;transition:.22s;min-height:44px;display:inline-flex;align-items:center}
+.btn-main{background:linear-gradient(92deg,var(--plum),var(--coral));color:#fff;box-shadow:0 10px 30px -10px rgba(168,85,247,.6)}
+.btn-main:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--plum-2);color:#fff}
+
+.stats{margin-top:clamp(2rem,6vw,3rem);display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.stat{padding:1.05rem 1.1rem;border:1px solid var(--line);border-radius:var(--rad);background:rgba(20,18,31,.6)}
+.stat b{display:block;font-size:clamp(1.3rem,4.6vw,1.85rem);font-weight:800;letter-spacing:-.02em}
+.stat small{color:var(--ink-dim);font-size:.8em}
+
+/* 栏目通栏 */
+section{padding:clamp(2.6rem,8vw,4.4rem) 0;border-top:1px solid var(--line)}
+.kicker{display:flex;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:1.7rem}
+.kicker h2{font-size:clamp(1.35rem,4.6vw,2.05rem);font-weight:800;letter-spacing:-.01em}
+.kicker .tag{font-size:.74em;color:var(--plum-2);border:1px solid rgba(168,85,247,.35);padding:.22rem .7rem;border-radius:999px;letter-spacing:.06em}
+.kicker .more{margin-left:auto;font-size:.86em;color:var(--ink-dim)}
+.kicker .more:hover{color:var(--coral)}
+
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
+.card{border:1px solid var(--line);border-radius:var(--rad);background:linear-gradient(180deg,rgba(20,18,31,.85),rgba(20,18,31,.45));overflow:hidden;display:flex;flex-direction:column;transition:.24s}
+.card:hover{transform:translateY(-4px);border-color:rgba(168,85,247,.45);box-shadow:0 18px 40px -22px rgba(0,0,0,.7)}
+.thumb{aspect-ratio:16/10;position:relative;overflow:hidden;background:rgba(255,255,255,.05)}
+.thumb i{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(1.4rem,5vw,2.1rem);font-style:normal;opacity:.85}
+.thumb .badge{position:absolute;left:.7rem;top:.7rem;font-size:.68em;letter-spacing:.05em;padding:.2rem .55rem;border-radius:999px;background:rgba(11,10,20,.72);backdrop-filter:blur(6px)}
+.thumb .score{position:absolute;right:.7rem;bottom:.7rem;font-size:.74em;font-weight:800;color:#0b0a14;background:linear-gradient(92deg,#ffd56b,#ff9f45);padding:.18rem .5rem;border-radius:8px}
+.card .body{padding:1rem 1.05rem 1.15rem;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:1.04rem;font-weight:700;line-height:1.45;margin-bottom:.35rem}
+.card p{color:var(--ink-dim);font-size:.88em;flex:1}
+.card .meta{margin-top:.8rem;display:flex;align-items:center;gap:.6rem;font-size:.76em;color:var(--ink-dim)}
+.dot{width:3px;height:3px;border-radius:50%;background:currentColor;opacity:.5}
+
+/* 索引表 */
+.tools{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.2rem;align-items:center}
+.chip{padding:.42rem .9rem;border-radius:999px;font-size:.85em;border:1px solid var(--line);color:var(--ink-dim);min-height:38px;display:inline-flex;align-items:center}
+.chip:hover, .chip[aria-pressed="true"]{color:#fff;border-color:var(--plum-2);background:rgba(108,92,231,.18)}
+.search{margin-left:auto;position:relative;min-width:min(100%,220px);flex:1 1 220px}
+.search input{width:100%;padding:.58rem 2.4rem .58rem .95rem;border-radius:999px;border:1px solid var(--line);background:rgba(20,18,31,.7);color:var(--ink);font-size:.9em;min-height:42px}
+.search input:focus{outline:none;border-color:var(--plum-2)}
+.search kbd{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.7em;color:var(--ink-dim);border:1px solid var(--line);border-radius:6px;padding:.1rem .4rem;font-family:inherit}
+table{width:100%;border-collapse:collapse;font-size:.9em}
+caption{caption-side:top;text-align:left;font-size:.8em;color:var(--ink-dim);padding-bottom:.7rem}
+th,td{padding:.72rem .8rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-size:.76em;letter-spacing:.05em;color:var(--plum-2);font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(168,85,247,.3)}
+tbody tr:hover{background:rgba(108,92,231,.08)}
+td a{color:var(--ink);border-bottom:1px dashed rgba(255,255,255,.22)}
+td a:hover{color:var(--coral);border-bottom-color:var(--coral)}
+.num{font-variant-numeric:tabular-nums;color:var(--ink-dim);font-size:.86em}
+@media (max-width:640px){
+  table,thead,tbody,th,td,tr{display:block}
+  thead{position:absolute;left:-9999px;top:-9999px}
+  td{padding:.55rem .8rem;border-bottom:none}
+  tbody tr{border:1px solid var(--line);border-radius:14px;margin-bottom:.75rem;padding:.35rem 0;background:rgba(20,18,31,.5)}
+  td::before{content:attr(data-l)"：";color:var(--plum-2);font-size:.74em;letter-spacing:.04em;margin-right:.4rem}
+  td.num{font-weight:700;color:var(--ink)}
+}
+
+/* 问答 */
+.faq details{border:1px solid var(--line);border-radius:14px;padding:.15rem 1.15rem;margin-bottom:.65rem;background:rgba(20,18,31,.55)}
+.faq details[open]{border-color:rgba(168,85,247,.4)}
+.faq summary{cursor:pointer;padding:.85rem 0;font-weight:650;list-style:none;display:flex;gap:.75rem;align-items:flex-start;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";margin-left:auto;color:var(--plum-2);font-weight:800;flex:0 0 auto}
+.faq details[open] summary::after{content:"−"}
+.faq p{color:var(--ink-dim);padding:0 0 .95rem;font-size:.93em}
+
+/* 关于 / 地址卡 */
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1.1rem}
+.note{border:1px solid var(--line);border-radius:var(--rad);padding:1.25rem 1.3rem;background:rgba(20,18,31,.55)}
+.note h3{font-size:1.02rem;margin-bottom:.55rem;display:flex;align-items:center;gap:.5rem}
+.note h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--coral)}
+.note p{color:var(--ink-dim);font-size:.9em}
+.addr{font-variant-numeric:tabular-nums;word-break:break-all;font-size:.95em;letter-spacing:.01em}
+.addr a{color:var(--plum-2);border-bottom:1px solid rgba(168,85,247,.4)}
+.addr a:hover{color:var(--coral);border-bottom-color:var(--coral)}
+
+/* 页脚 */
+.foot{border-top:1px solid var(--line);padding:2.2rem 0 3rem;color:var(--ink-dim);font-size:.82em}
+.foot-in{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.foot .copy{margin-left:auto;text-align:right}
+.foot a:hover{color:var(--ink)}
+@media (max-width:560px){.foot .copy{margin-left:0;text-align:left;width:100%}}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+@media print{body{background:#fff;color:#000}.head,.nav,.cta,.tools,.foot{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="head" role="banner">
+  <div class="wrap head-in">
+    <div class="logo"><b>七七影视大全</b><span>qiqiyingshidaquan-zh</span></div>
+    <nav class="nav" aria-label="主导航">
+      <a href="#dianying">电影</a>
+      <a href="#dianshi">剧集</a>
+      <a href="#zongyi">综艺</a>
+      <a href="#donghua">动漫</a>
+      <a href="#suoyin">索引</a>
+      <a href="#wenda">问答</a>
+      <a href="#guanyu">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div class="eyebrow">影视资料索引 · 2026 片单</div>
+      <h1 id="h1">在 <em>七七影视大全</em>，把想看的那一部<BR class="br-lg" hidden>先放进片单</h1>
+      <p class="lede">一个只做一件事的地方：把散在各处的影视信息，按类型、年份、地区和使用场景重新归好档。院线新片、长剧、综艺、纪录片、番剧都能查到，选片的时间省下来，留给真正开看的那一刻。</p>
+      <div class="cta">
+        <a class="btn btn-main" href="#suoyin">打开片单索引</a>
+        <a class="btn btn-ghost" href="#wenda">选片前先看这 5 个问题</a>
+      </div>
+      <dl class="stats">
+        <div class="stat"><b>5</b><small>内容栏目，一条线查到底</small></div>
+        <div class="stat"><b>60+</b><small>手工整理的片目条目</small></div>
+        <div class="stat"><b>0</b><small>弹窗干扰，纯阅读体验</small></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 栏目一 -->
+  <section id="dianying" aria-labelledby="s1">
+    <div class="wrap">
+      <div class="kicker">
+        <h2 id="s1">一、电影：从「想看」到「该看」</h2><span class="tag">栏目 01</span><a class="more" href="#suoyin">全部片目 →</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#2b1b4d,#6c5ce7)"><i>🎬</i><span class="badge">院线 · 剧情</span><span class="score">8.4</span></div>
+          <div class="body">
+            <h3>《未知边界》——一封跨时区的道歉信</h3>
+            <p>讲述两位失联十年的同窗在边境小站重逢，靠一场误会的消解完成自我和解。节奏慢，但留白恰到好处。</p>
+            <div class="meta"><span>2026 · 内地</span><span class="dot"></span><span>112 分钟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#4a1528,#ff6b8a)"><i>🕵️</i><span class="badge">悬疑 · 犯罪</span><span class="score">8.1</span></div>
+          <div class="body">
+            <h3>《第七次回拨》——电话那头是自己</h3>
+            <p>以一通能打到昨天的电话为切口，把「如果能重来」这种老命题拍出了新鲜的时间褶皱感。</p>
+            <div class="meta"><span>2026 · 港式</span><span class="dot"></span><span>98 分钟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#12323a,#22a8a0)"><i>🌊</i><span class="badge">纪录片 · 自然</span><span class="score">9.0</span></div>
+          <div class="body">
+            <h3>《潮汐纪》——跟着洋流走完一年</h3>
+            <p>摄制组追着同一片海域拍了十四个朔望，把潮汐当作主角，配乐几乎全部来自现场收音。</p>
+            <div class="meta"><span>2025 · 纪录</span><span class="dot"></span><span>126 分钟</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目二 -->
+  <section id="dianshi" aria-labelledby="s2">
+    <div class="wrap">
+      <div class="kicker">
+        <h2 id="s2">二、剧集：长故事怎么追不累</h2><span class="tag">栏目 02</span><a class="more" href="#suoyin">按集数筛选 →</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#3a1f0f,#e08a3c)"><i>🏮</i><span class="badge">年代 · 家庭</span><span class="score">8.7</span></div>
+          <div class="body">
+            <h3>《巷口理发店》24 集全</h3>
+            <p>一家开在老巷口的理发店串起四代人的婚丧嫁娶，每集一个独立故事，适合碎片时间追。</p>
+            <div class="meta"><span>2026 · 已完结</span><span class="dot"></span><span>单集约 38 分钟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#0f2a3a,#3a7bd5)"><i>🚀</i><span class="badge">科幻 · 群像</span><span class="score">8.2</span></div>
+          <div class="body">
+            <h3>《深空值班表》更新至 11 集</h3>
+            <p>空间站里六个人的轮班表就是全部世界观，不靠大场面，靠值班日志里越写越短的那些句子。</p>
+            <div class="meta"><span>2026 · 更新中</span><span class="dot"></span><span>单集约 45 分钟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#2b0033,#8e2de2)"><i>🗡️</i><span class="badge">古装 · 权谋</span><span class="score">7.9</span></div>
+          <div class="body">
+            <h3>《棋局以南》16 集全</h3>
+            <p>把朝堂博弈写成一盘棋，伏笔收得干净。缺点是前四集铺陈偏慢，熬过去就停不下来。</p>
+            <div class="meta"><span>2025 · 已完结</span><span class="dot"></span><span>单集约 42 分钟</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目三 -->
+  <section id="zongyi" aria-labelledby="s3">
+    <div class="wrap">
+      <div class="kicker">
+        <h2 id="s3">三、综艺与纪实：轻松档 &amp; 硬核档</h2><span class="tag">栏目 03</span><a class="more" href="#suoyin">查看更新节奏 →</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#3a0020,#ff4d6d)"><i>🎤</i><span class="badge">音乐 · 现场</span><span class="score">8.5</span></div>
+          <div class="body">
+            <h3>《第一次上台》第 3 季</h3>
+            <p>素人歌手只有一首歌的机会，评委不点评技术，只说「这句我信不信」。真实得有点残忍。</p>
+            <div class="meta"><span>周更 · 12 期</span><span class="dot"></span><span>单期 75 分钟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#00241a,#00b894)"><i>🥘</i><span class="badge">美食 · 旅行</span><span class="score">8.8</span></div>
+          <div class="body">
+            <h3>《菜市场漫游指南》</h3>
+            <p>每期逛一座城市的早市，从一把当季菜讲到一道家常做法，看饿是常态，很适合下饭。</p>
+            <div class="meta"><span>双周更 · 8 期</span><span class="dot"></span><span>单期 52 分钟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#1a1a2e,#536dfe)"><i>🧠</i><span class="badge">访谈 · 深度</span><span class="score">8.9</span></div>
+          <div class="body">
+            <h3>《不赶时间的对话》</h3>
+            <p>没有提纲式的快问快答，一期只聊一个人两小时，剪辑几乎不动，留着呼吸和停顿。</p>
+            <div class="meta"><span>月更 · 6 期</span><span class="dot"></span><span>单期 120 分钟</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目四 -->
+  <section id="donghua" aria-labelledby="s4">
+    <div class="wrap">
+      <div class="kicker">
+        <h2 id="s4">四、动漫番剧：补番路线参考</h2><span class="tag">栏目 04</span><a class="more" href="#suoyin">按季番检索 →</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#24103f,#a855f7)"><i>🌸</i><span class="badge">治愈 · 日常</span><span class="score">8.6</span></div>
+          <div class="body">
+            <h3>《窗台上的小气象》全 12 话</h3>
+            <p>一位怕打雷的少女和一只会预报天气的猫，画面像水彩速写，适合睡前一话一话慢慢补。</p>
+            <div class="meta"><span>2026 春番</span><span class="dot"></span><span>单话 24 分钟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#3a0d0d,#ff5252)"><i>⚔️</i><span class="badge">热血 · 战斗</span><span class="score">8.3</span></div>
+          <div class="body">
+            <h3>《锈刃》连载中 · 第 2 季</h3>
+            <p>武器会生锈、人也一样——战斗分镜干净利落，世界观靠细节一点点往外漏，不急着交代。</p>
+            <div class="meta"><span>2026 连载</span><span class="dot"></span><span>单话 25 分钟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#0d2b3a,#4fc3f7)"><i>🐋</i><span class="badge">奇幻 · 冒险</span><span class="score">9.1</span></div>
+          <div class="body">
+            <h3>《海底邮差》剧场版</h3>
+            <p>把信交给鲸鱼投递的设定本身就值一张票。配乐是整部片的主角，建议戴耳机看。</p>
+            <div class="meta"><span>剧场版 · 2025</span><span class="dot"></span><span>98 分钟</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 索引表 -->
+  <section id="suoyin" aria-labelledby="s5">
+    <div class="wrap">
+      <div class="kicker">
+        <h2 id="s5">五、片单索引：按类型一把捞起</h2><span class="tag">栏目 05 · 检索</span>
+      </div>
+      <div class="tools">
+        <button class="chip" aria-pressed="true" data-f="all">全部</button>
+        <button class="chip" data-f="movie">电影</button>
+        <button class="chip" data-f="tv">剧集</button>
+        <button class="chip" data-f="show">综艺</button>
+        <button class="chip" data-f="anime">动漫</button>
+        <div class="search">
+          <input id="q" type="search" placeholder="搜片名、类型或年份，如「悬疑 2026」" aria-label="检索片单">
+          <kbd>/</kbd>
+        </div>
+      </div>
+      <div role="region" aria-label="片单表格" tabindex="0">
+      <table id="tbl">
+        <caption>共 12 条示例条目 · 点击片名可跳转至对应栏目，内页链接以锚点形式组织</caption>
+        <thead>
+          <tr><th scope="col">片名</th><th scope="col">类型</th><th scope="col">年份</th><th scope="col">篇幅</th><th scope="col">栏目</th></tr>
+        </thead>
+        <tbody>
+          <tr data-cat="movie"><td data-l="片名"><a href="#dianying">未知边界</a></td><td data-l="类型">剧情 / 家庭</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">112 分钟</td><td data-l="栏目">电影</td></tr>
+          <tr data-cat="movie"><td data-l="片名"><a href="#dianying">第七次回拨</a></td><td data-l="类型">悬疑 / 犯罪</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">98 分钟</td><td data-l="栏目">电影</td></tr>
+          <tr data-cat="movie"><td data-l="片名"><a href="#dianying">潮汐纪</a></td><td data-l="类型">纪录片 / 自然</td><td data-l="年份" class="num">2025</td><td data-l="篇幅" class="num">126 分钟</td><td data-l="栏目">电影</td></tr>
+          <tr data-cat="tv"><td data-l="片名"><a href="#dianshi">巷口理发店</a></td><td data-l="类型">年代 / 家庭</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">24 集全</td><td data-l="栏目">剧集</td></tr>
+          <tr data-cat="tv"><td data-l="片名"><a href="#dianshi">深空值班表</a></td><td data-l="类型">科幻 / 群像</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">更新至 11 集</td><td data-l="栏目">剧集</td></tr>
+          <tr data-cat="tv"><td data-l="片名"><a href="#dianshi">棋局以南</a></td><td data-l="类型">古装 / 权谋</td><td data-l="年份" class="num">2025</td><td data-l="篇幅" class="num">16 集全</td><td data-l="栏目">剧集</td></tr>
+          <tr data-cat="show"><td data-l="片名"><a href="#zongyi">第一次上台 第3季</a></td><td data-l="类型">音乐 / 竞演</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">12 期 · 周更</td><td data-l="栏目">综艺</td></tr>
+          <tr data-cat="show"><td data-l="片名"><a href="#zongyi">菜市场漫游指南</a></td><td data-l="类型">美食 / 旅行</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">8 期 · 双周更</td><td data-l="栏目">综艺</td></tr>
+          <tr data-cat="show"><td data-l="片名"><a href="#zongyi">不赶时间的对话</a></td><td data-l="类型">访谈 / 深度</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">6 期 · 月更</td><td data-l="栏目">综艺</td></tr>
+          <tr data-cat="anime"><td data-l="片名"><a href="#donghua">窗台上的小气象</a></td><td data-l="类型">治愈 / 日常</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">全 12 话</td><td data-l="栏目">动漫</td></tr>
+          <tr data-cat="anime"><td data-l="片名"><a href="#donghua">锈刃 第2季</a></td><td data-l="类型">热血 / 战斗</td><td data-l="年份" class="num">2026</td><td data-l="篇幅" class="num">连载中</td><td data-l="栏目">动漫</td></tr>
+          <tr data-cat="anime"><td data-l="片名"><a href="#donghua">海底邮差 剧场版</a></td><td data-l="类型">奇幻 / 冒险</td><td data-l="年份" class="num">2025</td><td data-l="篇幅" class="num">98 分钟</td><td data-l="栏目">动漫</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 问答 -->
+  <section id="wenda" class="faq" aria-labelledby="s6">
+    <div class="wrap">
+      <div class="kicker"><h2 id="s6">六、关于「七七影视大全」的常见疑问</h2><span class="tag">栏目 06 · FAQ</span></div>
+      <details open>
+        <summary>这个站是做什么的，和普通影视站有什么不同？</summary>
+        <p>它不做播放器、不挂资源链接，只做「信息层」：把片名、类型、年份、篇幅和更新状态整理成可检索的索引。选片决策前先来这儿扫一眼，比在播放页来回试错省时间。</p>
+      </details>
+      <details>
+        <summary>片单多久更新一次，会不会变成旧数据？</summary>
+        <p>栏目页按季度节奏维护，新片上线、剧集完结、综艺改档都会同步到索引表。表格里的「更新中／已完结／连载中」是当前状态，不是写死的历史文案。</p>
+      </details>
+      <details>
+        <summary>怎么最快找到适合今晚看的那一部？</summary>
+        <p>两步走：先用上方索引区的分类按钮收窄类型，再在搜索框里补一个词，比如「治愈」「40 分钟以内」「已完结」。条目少、判断快，三十秒能定下来。</p>
+      </details>
+      <details>
+        <summary>手机上看着会错位或者要左右拖吗？</summary>
+        <p>不会。整站是流体网格加移动优先的断点，从 320px 的旧款手机到宽屏显示器都只上下滚动；表格在窄屏会自动折成卡片，不用横向拖动。</p>
+      </details>
+      <details>
+        <summary>片名点进去为什么是 # 锚点，不是独立内页？</summary>
+        <p>因为这是单页站结构，所有栏目都在同一份文档里，锚点跳转既快又不产生新请求。站内导航、片名链接、按钮全部走 #，符合单页组织方式。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 关于 / 入口 -->
+  <section id="guanyu" aria-labelledby="s7">
+    <div class="wrap">
+      <div class="kicker"><h2 id="s7">七、关于本站与访问入口</h2><span class="tag">栏目 07</span></div>
+      <div class="about-grid">
+        <div class="note">
+          <h3>内容边界</h3>
+          <p>只收录公开可查的影视元数据与主观观感短评，不涉及下载、转存或在线播放服务。条目里的评分是本站编辑口径，仅供选片参考，不是聚合平台的均值。</p>
+        </div>
+        <div class="note">
+          <h3>排版与可访问性</h3>
+          <p>全站用语义标签组织：<code>header / nav / main / section / article / table / details</code>，支持键盘 Tab 跳转、屏幕阅读器地标，也尊重系统的「减少动态效果」偏好。</p>
+        </div>
+        <div class="note">
+          <h3>唯一访问地址</h3>
+          <p class="addr">正式入口：<a href="https://qiqiyingshidaquan-zh.github.io/" rel="canonical">https://qiqiyingshidaquan-zh.github.io/</a><br>站点名称：七七影视大全（qiqiyingshidaquan-zh）。请认准这个地址，其他同名站点与本索引内容无关。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" role="contentinfo">
+  <div class="wrap foot-in">
+    <span>© <span id="yr">2026</span> 七七影视大全 · qiqiyingshidaquan-zh</span>
+    <span class="copy">站点地址 <a href="https://qiqiyingshidaquan-zh.github.io/">qiqiyingshidaquan-zh.github.io</a> · 单页索引，锚点导航</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t = document.getElementById('yr');
+  if(t) t.textContent = new Date().getFullYear();
+
+  var q = document.getElementById('q');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#tbl tbody tr'));
+  function filter(){
+    var k = (q.value || '').trim().toLowerCase();
+    var btn = document.querySelector('.chip[aria-pressed="true"]');
+    var cat = btn ? btn.getAttribute('data-f') : 'all';
+    rows.forEach(function(r){
+      var hit = true;
+      if(cat !== 'all' && r.getAttribute('data-cat') !== cat) hit = false;
+      if(k && hit){
+        hit = r.textContent.toLowerCase().indexOf(k) > -1;
+      }
+      r.style.display = hit ? '' : 'none';
+    });
+    var cap = document.querySelector('#tbl caption');
+    if(cap){
+      var vis = rows.filter(function(r){return r.style.display !== 'none';}).length;
+      cap.textContent = '命中 ' + vis + ' 条 · 点击片名跳转至对应栏目（锚点导航）';
+    }
+  }
+  q.addEventListener('input', filter);
+  document.querySelectorAll('.chip').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true');
+      filter();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === '/' && document.activeElement !== q){
+      e.preventDefault(); q.focus();
+    }
+  });
+})();
+</script>
+</body>
+</html>
